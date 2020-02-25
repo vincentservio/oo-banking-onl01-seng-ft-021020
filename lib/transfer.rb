@@ -13,6 +13,8 @@ class Transfer
     
     if self.status == "closed"
       self << closed_accounts
+    end
+  end
 
   def valid?
     if sender.valid? && receiver.valid?
