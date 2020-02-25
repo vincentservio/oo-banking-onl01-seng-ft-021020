@@ -8,6 +8,8 @@ class Transfer
     @amount = amount
     @status = "pending"
   end
+  def closed_accounts
+    
 
   def valid?
     if sender.valid? && receiver.valid?
