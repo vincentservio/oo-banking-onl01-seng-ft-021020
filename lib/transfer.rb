@@ -9,7 +9,10 @@ class Transfer
     @status = "pending"
   end
   def closed_accounts
+    closed_accounts = []
     
+    if self.status == "closed"
+      self << closed_accounts
 
   def valid?
     if sender.valid? && receiver.valid?
